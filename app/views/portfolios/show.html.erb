@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @portfolio.project_name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@portfolio.picture.url, size: "250x150") if @portfolio.picture? %>
+</p>
+
+<p>
+  <strong>Will show:</strong>
+  <%= @portfolio.will_show %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @portfolio.description %>
+</p>
+
+<%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
+<%= link_to 'Back', portfolios_path %>

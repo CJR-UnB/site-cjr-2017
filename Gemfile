@@ -8,8 +8,14 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Flexible authentication solution for Rails with Warden. 
+# Flexible authentication solution for Rails with Warden.
 gem 'devise'
+# To upload Images
+gem 'carrierwave'
+# Gem to help with images sizes
+gem 'mini_magick'
+# Gem to Help upload images to production
+gem 'fog'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
